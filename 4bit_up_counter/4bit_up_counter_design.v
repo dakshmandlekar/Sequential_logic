@@ -1,0 +1,16 @@
+module up_counter( input clock , input reset , output reg [3:0]Q );
+  
+  always @ ( posedge clock)
+    begin 
+      
+      if (reset)
+        Q<=4'b0000;
+      
+      else 
+        Q<=Q+1'b1 ;
+      
+    end 
+  
+endmodule 
+      
+      
